@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/0e15bfcea9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="projectName">
+                <a href="#"><strong>Dinesh chavan</strong></a>
+              </div>
+
+            <ul id="sidemenu">
+                <li><a href="#HEADER">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#SERVICES">SERVICES</a></li>
+                <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+                <li><a href="#CONTACT_US">CONTACT_US</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    
+            <div class="header-text">
+                
+                <h1>Hii, I'm <span>Dinesh chavan</span><br/>From Pune</h1>
+
+                <p>" FRONT-END DEVELOPER "</p><br/>
+                
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>IT Education Centre Pune is the most reputed Full Stack training institute in Pune 
+                        which offers the most effective Full Stack programmer training  based on practical exercises to appeal 
+                        to the dynamically evolving role of the programmers and advancement in technology across the world. 
+                        IT Education Centre Full Stack developer course in Pune was designed in a way to help the students 
+                        transform themselves professionally by acquiring industry-standard skills. The institute dedicatedly 
+                        highlights a practical based and job oriented Full Stack developer Classes in Pune in order to prepare the 
+                        students having the ability to acquire jobs easily. Along with its unique methodology of Full Stack developer 
+                        training course at Pune, the institute also provides a 100% placement assistance to all students enrolled.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front End</span><br>Design the front of web</li>
+                                <li><span>Back End</span><br>Back end then running the website</li>
+                                <li><span>App Developement</span><br>Mobile Application Developement</li>
+                                <li><span>Web Developement</span><br>Front End and Back end Learning</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Online Code Editor for using HTML,CSS and JAVASCRIPT</li> <li><span>2023 - 2023</span><br>Coffee Shop website in our shop Minor project</li>
+                                <li><span>2022 - 2023</span><br>Encrypt And Decrypt for image in using JAVA project</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BCA</span><br>(Full Stack Developement) at Ajeenkya D Y Patil University Of Pune</li>
+                                <li><span>Full Stack Java Developer</span><br>java Developement training at Pentagaon Space Banglore.</li>
+                                
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>IT Education Centre Pune is the most reputed Full Stack training institute in Pune 
+                        which offers the most effective Full Stack programmer training based on practical exercises to appeal to the dynamically evolving role of the 
+                        programmers and advancement in technology across the world.</p>
+
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End</h2>
+                    <p>IT Education Centre Pune is the most reputed Full Stack training institute in Pune which offers the most 
+                        effective Full Stack programmer training based on practical exercises to appeal to the dynamically evolving role of the 
+                        programmers and advancement in technology across the world.</p>
+
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developement</h2>
+                    <p>IT Education Centre Pune is the most reputed Full Stack training institute in 
+                        Pune which offers the most effective Full Stack programmer training based on practical exercises to appeal to the dynamically evolving role of the 
+                        programmers and advancement in technology across the world.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people
+                            around the Download to the play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app is used full in singing the song is downloading
+                            in focus to the work on proper web app in music app.
+                        </p>
+                        <a href="#"><i class="fa-light fa-music"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The online shopping app is in used full on her moment
+                            on style to the record in workplace to the easy used 
+                            in mobile app in online shopping app.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">contact me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>dineshchavan7385@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                  <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    
+                  </div>
+                  <a href="sachindolasecv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"</div>
+                    <form>
+                        <input type="text" name="Name" placeholder = "Your Name"required>
+                        <input type="email" name="email" placeholder="Your email"required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Portfolio @ Dinesh. Made it <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+   <script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+     
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+   </script>
+
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right  = "0";
+    }
+    function openmenu(){
+        sidemenu.style.right = "200px";
+        
+    }
+   </script>
+
+</body>
+</html>
+
+
